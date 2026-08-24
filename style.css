@@ -11,8 +11,8 @@
     --text-color: #111827;
     --text-muted: #6B7280;
     --border-color: #E5E7EB;
-    --accent-color: #ff6a2b;
-    --accent-hover: #ffa363;
+    --accent-color: #6B8E55;
+    --accent-hover: #91bb77;
     --white: #FFFFFF;
     --black: #000000;
     
@@ -1315,3 +1315,148 @@ footer {
     color: var(--accent-color);
     font-weight: bold;
 }
+
+/* ─── Project Button Row ────────────────────────────────── */
+.project-btn-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.proj-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 18px;
+    border-radius: 9999px;
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+/* Dark GitHub / default button */
+.proj-btn-github {
+    background-color: #111827;
+    color: #FFFFFF;
+}
+
+.proj-btn-github:hover {
+    background-color: #1F2937;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Accent Live Demo button */
+.proj-btn-live {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+.proj-btn-live:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 106, 43, 0.25);
+}
+
+/* ─── Contact Section Enhanced Icons ───────────────────── */
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-info-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    transition: var(--transition-fast);
+}
+
+/* Unique icon accent colors per contact method */
+.contact-info-icon--email  { color: var(--accent-color); background-color: rgba(255,106,43,0.08); border-color: rgba(255,106,43,0.2); }
+.contact-info-icon--phone  { color: #10B981;             background-color: rgba(16,185,129,0.08); border-color: rgba(16,185,129,0.2); }
+.contact-info-icon--location { color: #6366F1;           background-color: rgba(99,102,241,0.08); border-color: rgba(99,102,241,0.2); }
+.contact-info-icon--kaggle { color: #F59E0B;             background-color: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.2); }
+
+.contact-info-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact-info-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+}
+
+.contact-info-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+}
+
+.contact-info-link:hover {
+    color: var(--accent-color);
+}
+
+/* ─── Labeled Social Buttons ────────────────────────────── */
+.social-btn-labeled {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    background-color: var(--white);
+    transition: var(--transition-smooth);
+}
+
+.social-btn-labeled:hover {
+    border-color: #111827;
+    background-color: #111827;
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.social-btn-labeled--linkedin:hover {
+    border-color: #0A66C2;
+    background-color: #0A66C2;
+    color: var(--white);
+}
+
+.social-btn-labeled--cv {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--white);
+}
+
+.social-btn-labeled--cv:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 106, 43, 0.25);
+}
+
