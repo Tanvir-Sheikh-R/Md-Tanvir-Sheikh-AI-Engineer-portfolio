@@ -6,7 +6,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     initAccordion();
     initMetricObserver();
-    initRagVisualizer();
     initSmoothScrolling();
     initProjectCollapsible();
 });
@@ -28,6 +27,21 @@ function initSmoothScrolling() {
                     block: 'start'
                 });
             }
+        });
+    });
+}
+
+function initProjectCollapsible() {
+    document.querySelectorAll('.project-expand-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = document.getElementById(btn.dataset.target);
+            if (!target) return;
+
+            const isOpen = btn.classList.toggle('active');
+            target.style.maxHeight = isOpen ? `${target.scrollHeight}px` : null;
+            btn.innerHTML = isOpen
+                ? 'Hide Details <i class="ph ph-caret-up"></i>'
+                : 'View Details <i class="ph ph-caret-down"></i>';
         });
     });
 }
@@ -88,126 +102,4 @@ function initMetricObserver() {
     }, { threshold: 0.5 });
 
     observer.observe(document.querySelector('.metric-circle-wrapper'));
-}
-
-/**
- * 4. Interactive RAG / LangGraph Pipeline Node Simulator
- */
-function initRagVisualizer() {
-    const runBtn = document.getElementById('runRagBtn');
-    const progressLine = document.getElementById('ragProgress');
-    const logs = document.getElementById('ragLog');
-
-    const nodes = {
-        n1: document.getElementById('node1'),
-        n2: document.getElementById('node2'),
-        n3: document.getElementById('node3')
-    };
-
-    const labels = {
-        l1: document.getElementById('nodeVal1'),
-        l2: document.getElementById('nodeVal2'),
-        l3: document.getElementById('nodeVal3')
-    };
-
-    if (!runBtn) return;
-
-    let isRunning = false;
-
-    runBtn.addEventListener('click', () => {
-        if (isRunning) return;
-        isRunning = true;
-        runBtn.disabled = true;
-        runBtn.innerText = "Processing...";
-
-        // Reset visual state
-        progressLine.style.height = "0%";
-        Object.values(nodes).forEach(n => n.style.backgroundColor = '');
-        Object.values(labels).forEach(l => {
-            l.innerText = "Idle";
-            l.style.color = "";
-        });
-
-        // Step 1: Query Router
-        setTimeout(() => {
-            nodes.n1.style.backgroundColor = 'rgba(37, 99, 235, 0.15)';
-            nodes.n1.style.borderColor = 'var(--accent-color)';
-            labels.l1.innerText = "Routing query...";
-            labels.l1.style.color = "var(--accent-color)";
-            logs.innerText = "Routing user query via semantic classifier graph edge...";
-            progressLine.style.height = "16%";
-        }, 300);
-
-        // Step 2: Transition to Vector Db Ingestion
-        setTimeout(() => {
-            nodes.n1.style.backgroundColor = '';
-            nodes.n1.style.borderColor = '';
-            labels.l1.innerText = "Routed (RAG)";
-            labels.l1.style.color = "#81C784";
-            
-            nodes.n2.style.backgroundColor = 'rgba(37, 99, 235, 0.15)';
-            nodes.n2.style.borderColor = 'var(--accent-color)';
-            labels.l2.innerText = "Searching vectors...";
-            labels.l2.style.color = "var(--accent-color)";
-            logs.innerText = "Ingesting ChromaDB persistent index with MMR vector embeddings...";
-            progressLine.style.height = "50%";
-        }, 1800);
-
-        // Step 3: Transition to Verification Judge Evaluator
-        setTimeout(() => {
-            nodes.n2.style.backgroundColor = '';
-            nodes.n2.style.borderColor = '';
-            labels.l2.innerText = "Retrieved Context";
-            labels.l2.style.color = "#81C784";
-            
-            nodes.n3.style.backgroundColor = 'rgba(37, 99, 235, 0.15)';
-            nodes.n3.style.borderColor = 'var(--accent-color)';
-            labels.l3.innerText = "Judging response...";
-            labels.l3.style.color = "var(--accent-color)";
-            logs.innerText = "Invoking LLM-as-Judge structured outputs evaluator validation...";
-            progressLine.style.height = "84%";
-        }, 3300);
-
-        // Final Step: Complete response returned
-        setTimeout(() => {
-            nodes.n3.style.backgroundColor = '';
-            nodes.n3.style.borderColor = '';
-            labels.l3.innerText = "Verified & Passed";
-            labels.l3.style.color = "#81C784";
-            
-            logs.innerText = "RAG flow validated successfully. Final tokens streamed to output.";
-            progressLine.style.height = "100%";
-            
-            runBtn.disabled = false;
-            runBtn.innerText = "Run Agent Flow";
-            isRunning = false;
-        }, 4800);
-    });
-}
-
-/**
- * 5. Collapsible Project CV Bullet Points
- */
-function initProjectCollapsible() {
-    const expandBtns = document.querySelectorAll('.project-expand-btn');
-    expandBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetId = btn.getAttribute('data-target');
-            const target = document.getElementById(targetId);
-            if (!target) return;
-            
-            const isActive = btn.classList.contains('active');
-            
-            if (isActive) {
-                btn.classList.remove('active');
-                target.style.maxHeight = null;
-                btn.innerHTML = `View CV Details <i class="ph ph-caret-down"></i>`;
-            } else {
-                btn.classList.add('active');
-                target.style.maxHeight = target.scrollHeight + 'px';
-                // Adjust card/accordion height if nested (our cards are standalone, so this works perfectly)
-                btn.innerHTML = `Hide CV Details <i class="ph ph-caret-up"></i>`;
-            }
-        });
-    });
 }

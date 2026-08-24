@@ -1,5 +1,5 @@
 /* 
-   MD. Tanvir Sheikh - AI Engineer Portfolio
+   Md Tanvir Sheikh - AI Engineer Portfolio
    Theme: Tech Modern (Vibrant Blue Accents, Clean Grids, Editorial Layout)
 */
 
@@ -486,21 +486,19 @@ header {
     gap: 20px;
 }
 
-.project-card-v2:hover .project-mockup-area {
+.project-card-v2:hover .project-photo {
     transform: translateY(-4px);
     box-shadow: 0 20px 30px rgba(0,0,0,0.06);
     border-color: rgba(37, 99, 235, 0.2);
 }
 
-.project-mockup-area {
-    background-color: #ECEAE5; /* placeholder solid visual */
+.project-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: var(--transition-smooth);
 }
 
@@ -520,16 +518,6 @@ header {
     color: var(--text-muted);
     font-size: 0.9rem;
     line-height: 1.5;
-}
-
-.project-meta-v2 {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    font-weight: 600;
-}
-
-.project-meta-v2 span {
-    color: var(--accent-color);
 }
 
 @media (max-width: 900px) {
@@ -600,6 +588,30 @@ header {
         grid-template-columns: 1fr;
     }
 }
+
+/* Project details accordion */
+.project-expand-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.project-expand-btn:hover { color: var(--accent-hover); }
+.project-bullets-collapse { max-height: 0; overflow: hidden; transition: var(--transition-smooth); }
+.project-bullets-list { list-style: none; padding: 15px 0 5px; margin: 15px 0 0; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--border-color); }
+.project-bullets-list li { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; padding-left: 15px; position: relative; }
+.project-bullets-list li::before { content: "—"; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; }
 
 /* Testimonial & Brands Section */
 .testimonial-grid {
@@ -1251,71 +1263,6 @@ footer {
     }
 }
 
-/* Project Collapsible Spec Styles */
-.project-expand-btn {
-    background: none;
-    border: none;
-    color: var(--accent-color);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 15px;
-    transition: var(--transition-fast);
-    padding: 0;
-    outline: none;
-}
-
-.project-expand-btn:hover {
-    color: var(--accent-hover);
-    gap: 10px;
-}
-
-.project-expand-btn i {
-    transition: var(--transition-smooth);
-}
-
-.project-expand-btn.active i {
-    transform: rotate(180deg);
-}
-
-.project-bullets-collapse {
-    max-height: 0;
-    overflow: hidden;
-    transition: var(--transition-smooth);
-}
-
-.project-bullets-list {
-    list-style: none;
-    padding: 15px 0 5px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    border-top: 1px solid var(--border-color);
-    margin-top: 15px;
-}
-
-.project-bullets-list li {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-    padding-left: 15px;
-    position: relative;
-}
-
-.project-bullets-list li::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-    font-weight: bold;
-}
-
 /* ─── Project Button Row ────────────────────────────────── */
 .project-btn-row {
     display: flex;
@@ -1361,7 +1308,7 @@ footer {
 .proj-btn-live:hover {
     background-color: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 106, 43, 0.25);
+    box-shadow: 0 8px 20px rgba(107, 142, 85, 0.30);
 }
 
 /* ─── Contact Section Enhanced Icons ───────────────────── */
@@ -1385,10 +1332,11 @@ footer {
 }
 
 /* Unique icon accent colors per contact method */
-.contact-info-icon--email  { color: var(--accent-color); background-color: rgba(255,106,43,0.08); border-color: rgba(255,106,43,0.2); }
-.contact-info-icon--phone  { color: #10B981;             background-color: rgba(16,185,129,0.08); border-color: rgba(16,185,129,0.2); }
-.contact-info-icon--location { color: #6366F1;           background-color: rgba(99,102,241,0.08); border-color: rgba(99,102,241,0.2); }
-.contact-info-icon--kaggle { color: #F59E0B;             background-color: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.2); }
+/* Contact icon colors — all harmonized to sage green theme */
+.contact-info-icon--email    { color: var(--accent-color);  background-color: rgba(107,142,85,0.10); border-color: rgba(107,142,85,0.25); }
+.contact-info-icon--phone    { color: var(--sage-dark);     background-color: rgba(80,95,78,0.10);   border-color: rgba(80,95,78,0.25); }
+.contact-info-icon--location { color: var(--sage-text);     background-color: rgba(46,58,44,0.08);   border-color: rgba(46,58,44,0.18); }
+.contact-info-icon--kaggle   { color: var(--accent-color);  background-color: rgba(107,142,85,0.10); border-color: rgba(107,142,85,0.25); }
 
 .contact-info-detail {
     display: flex;
@@ -1457,6 +1405,5 @@ footer {
     border-color: var(--accent-hover);
     color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 106, 43, 0.25);
+    box-shadow: 0 8px 20px rgba(107, 142, 85, 0.30);
 }
-
