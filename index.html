@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MD. Tanvir Sheikh | AI & Machine Learning Engineer Portfolio. Specialty in LLM agent orchestration, first-principles RAG systems, and neural architectures.">
+    <title>MD. Tanvir Sheikh | AI & Machine Learning Engineer</title>
+    
+    <!-- Tech Modern CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Phosphor Icons for Modern Tech Icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                TANVIR <span>SHEIKH</span>
+            </a>
+            
+            <ul class="nav-links-row">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#skills">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            
+            <a href="#contact" class="contact-header-btn">
+                Let's Talk
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" style="padding-top: 80px; padding-bottom: 80px;">
+            <div class="container hero-split">
+                
+                <!-- Left Hero Content -->
+                <div class="hero-content">
+                    <span class="hero-welcome">Hello, I'm</span>
+                    <h1 class="hero-main-title">
+                        TANVIR<br>
+                        <span>SHEIKH</span>
+                    </h1>
+                    <span class="hero-sub-title">AI &amp; Machine Learning Engineer</span>
+                    <p class="hero-desc">
+                        AI/ML Engineer with hands-on experience building LLM-powered applications: RAG pipelines (both custom-built and LangChain-based), agent orchestration with LangGraph, and tool/function-calling systems via the Groq API. Comfortable across the full stack — embeddings and vector search (ChromaDB), backend APIs (FastAPI), and deployment (Streamlit, Docker) — with a deep-learning foundation in PyTorch. Currently expanding into production evaluation and cloud deployment.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">
+                            View My Work <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            About Me <i class="ph ph-user-focus"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Available for projects card indicator -->
+                    <div class="available-badge">
+                        <div class="avatar-stack">
+                            <span class="avatar-stack-img"><i class="ph ph-brain"></i></span>
+                            <span class="avatar-stack-img"><i class="ph ph-code"></i></span>
+                            <span class="avatar-stack-img"><i class="ph ph-cpu"></i></span>
+                        </div>
+                        <p class="available-text">
+                            AVAILABLE FOR PROJECTS &bull; <span>Trusted by forward-thinking developers.</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Hero Visual Area -->
+                <div class="hero-visual-wrapper">
+                    <!-- Faint blueprint grid overlay -->
+                    <div class="visual-grid-overlay"></div>
+                    
+                    <!-- Nested Circular Dashed & Portrait -->
+                    <div class="portrait-circle-outer">
+                        <div class="portrait-circle-inner">
+                            <img src="assets/hero_portrait.png" alt="MD. Tanvir Sheikh Portrait" class="portrait-image" onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
+                            <div id="avatarFallback" style="display: none; width: 100%; height: 100%; font-family: var(--font-heading); font-size: 5rem; font-weight: 800; color: var(--accent-color); background-color: #E5E7EB; align-items: center; justify-content: center; border-radius: 50%;">
+                                TS
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Tech Labels -->
+                    <div class="floating-badge badge-loc">
+                        <span class="badge-label">Based In</span>
+                        <span class="badge-value">Dhaka, Bangladesh</span>
+                    </div>
+                    
+                    <div class="floating-badge badge-status">
+                        <span class="badge-label">Availability</span>
+                        <span class="badge-value">Worldwide (Remote)</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Featured Work (Projects Grid) -->
+        <section id="projects">
+            <div class="container">
+                <div class="featured-header">
+                    <div>
+                        <span class="section-label">Featured Work</span>
+                        <h2 style="font-size: 2.5rem;">Selected AI Engineering</h2>
+                    </div>
+                    <a href="https://github.com/Tanvir-Sheikh-R" target="_blank" class="view-all-link">
+                        View All Projects <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: Personal AI Assistant with RAG -->
+                    <div class="project-card-v2">
+                        <!-- Embedded RAG & LangGraph simulator widget directly in the visual card area -->
+                        <div class="project-mockup-area" style="background-color: #111827; padding: 20px; align-items: stretch;">
+                            <div class="rag-visualizer" style="height: 100%; min-height: unset; box-shadow: none; border: none; background-color: transparent; padding: 10px;">
+                                <div class="rag-header">
+                                    <span class="rag-title">LangGraph Agent Nodes</span>
+                                    <div class="rag-status">
+                                        <span class="rag-status-dot"></span>
+                                        Active
+                                    </div>
+                                </div>
+                                
+                                <div class="rag-flow" style="margin: 15px 0;">
+                                    <div class="rag-connector"></div>
+                                    <div class="rag-progress-line" id="ragProgress"></div>
+                                    
+                                    <div class="rag-node" id="node1" style="padding: 8px 12px; border-radius: 6px;">
+                                        <span class="rag-node-name" style="font-size: 0.75rem;">1. Query Router</span>
+                                        <span class="rag-node-val" id="nodeVal1" style="font-size: 0.7rem;">Idle</span>
+                                    </div>
+                                    <div class="rag-node" id="node2" style="padding: 8px 12px; border-radius: 6px;">
+                                        <span class="rag-node-name" style="font-size: 0.75rem;">2. RAG Tool Ingestion</span>
+                                        <span class="rag-node-val" id="nodeVal2" style="font-size: 0.7rem;">Idle</span>
+                                    </div>
+                                    <div class="rag-node" id="node3" style="padding: 8px 12px; border-radius: 6px;">
+                                        <span class="rag-node-name" style="font-size: 0.75rem;">3. Answer Evaluator</span>
+                                        <span class="rag-node-val" id="nodeVal3" style="font-size: 0.7rem;">Idle</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="rag-controls">
+                                    <button class="rag-btn" id="runRagBtn" style="padding: 6px 12px; font-size: 0.7rem;">Run Agent Flow</button>
+                                    <span class="rag-logs" id="ragLog" style="font-size: 0.65rem; color: #888888; max-width: 50%;">Click to simulate graph routing.</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Personal AI Assistant with RAG</h3>
+                            <p class="project-desc-v2">
+                                An agentic conversational assistant with real tool-use orchestration, multi-model fallbacks, and multi-tenant document ingestion.
+                            </p>
+                            <button class="project-expand-btn" data-target="proj1Details">View CV Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj1Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built an agentic conversational assistant using LangGraph, giving the model access to 3 tools (calculator, web search, RAG retrieval) routed via conditional graph edges — real tool-use orchestration, not a single-call chatbot.</li>
+                                    <li>Built a multi-model fallback chain across 3 Groq-hosted models with automatic retry on rate limits, plus an LLM-as-judge verification node (structured Pydantic output) that checks whether each answer actually addresses the question before returning it.</li>
+                                    <li>Multi-tenant RAG: per-session knowledge bases, multi-format document ingestion (PDF/DOCX/TXT/MD), query expansion, MMR search, ChromaDB, and HuggingFace embeddings.</li>
+                                    <li>Hand-rolled token-level streaming and a custom Streamlit UI with multi-thread chat, LLM-generated thread titles, and session checkpointing.</li>
+                                </ul>
+                            </div>
+                            <div class="project-meta-v2" style="margin-top: 15px;">
+                                Tech Stack: <span>Python, LangGraph, LangChain, ChromaDB, HuggingFace, Groq (gpt-oss-120b/20b, qwen3.6-27b), Streamlit, Pydantic</span>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Personal-AI-Assistant__GPT-app" target="_blank" style="margin-right: 15px; text-decoration: underline; color: var(--text-color); font-weight: 700; font-size: 0.8rem;">GitHub Repository</a>
+                                <a href="https://ai-chatbot-groqllm.streamlit.app/" target="_blank" style="text-decoration: underline; color: var(--accent-color); font-weight: 700; font-size: 0.8rem;">Live Demonstration</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Custom RAG Pipeline -->
+                    <div class="project-card-v2">
+                        <div class="project-mockup-area" style="background-color: #111827; padding: 25px;">
+                            <div style="display: flex; flex-direction: column; width: 100%; gap: 10px; font-size: 0.75rem; font-family: monospace; color: #E2E1DA;">
+                                <div style="border: 1px dashed rgba(255,255,255,0.15); padding: 8px; border-radius: 6px; text-align: center; background-color: rgba(255,255,255,0.01)">
+                                    <i class="ph ph-file-pdf" style="vertical-align: middle; margin-right: 5px; color: #E2E1DA;"></i> Document Ingestion (PyMuPDF)
+                                </div>
+                                <div style="text-align: center; color: #6B7280; font-size: 0.65rem;"><i class="ph ph-arrow-down"></i> Recursive Character Chunking</div>
+                                <div style="border: 1px dashed rgba(255,255,255,0.15); padding: 8px; border-radius: 6px; text-align: center; background-color: rgba(255,255,255,0.01)">
+                                    <i class="ph ph-fingerprint" style="vertical-align: middle; margin-right: 5px;"></i> Embeddings (SentenceTransformers)
+                                </div>
+                                <div style="text-align: center; color: #6B7280; font-size: 0.65rem;"><i class="ph ph-arrow-down"></i> ChromaDB Vector Indexing</div>
+                                <div style="border: 1px solid rgba(76, 175, 80, 0.4); padding: 8px; border-radius: 6px; text-align: center; background-color: rgba(76, 175, 80, 0.05); color: #81C784;">
+                                    <i class="ph ph-check-circle" style="vertical-align: middle; margin-right: 5px;"></i> Inversion In Vector Metric Solved
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Custom RAG Pipeline</h3>
+                            <p class="project-desc-v2">
+                                Written from lower-level first principles to demonstrate vector database distance-metric search retrieval internals.
+                            </p>
+                            <button class="project-expand-btn" data-target="proj2Details">View CV Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj2Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built a RAG system from first principles instead of high-level LangChain abstractions — custom EmbeddingManager, VectorStoreManager, and RAGRetriever classes — to demonstrate a working understanding of retrieval internals, not just framework calls.</li>
+                                    <li>Implemented the full ingestion-to-generation pipeline (PyMuPDF ingestion, recursive chunking, ChromaDB persistent storage, Llama 3.3 70B via Groq) and debugged production-grade retrieval bugs, including a ChromaDB distance-metric inversion and a silent fallback to default embeddings.</li>
+                                </ul>
+                            </div>
+                            <div class="project-meta-v2" style="margin-top: 15px;">
+                                Tech Stack: <span>Python, ChromaDB, SentenceTransformers, PyMuPDF, Groq (Llama 3.3 70B)</span>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="https://github.com/Tanvir-Sheikh-R/RAG-PDF-reader" target="_blank" style="text-decoration: underline; color: var(--text-color); font-weight: 700; font-size: 0.8rem;">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Attendance by Selfie -->
+                    <div class="project-card-v2">
+                        <div class="project-mockup-area" style="background-color: #E2E1DA; position: relative;">
+                            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative;">
+                                <div style="border: 2px solid #111827; width: 110px; height: 110px; border-radius: 6px; position: relative;">
+                                    <div style="position: absolute; top: -4px; left: -4px; width: 15px; height: 15px; border-top: 3px solid #2563EB; border-left: 3px solid #2563EB;"></div>
+                                    <div style="position: absolute; top: -4px; right: -4px; width: 15px; height: 15px; border-top: 3px solid #2563EB; border-right: 3px solid #2563EB;"></div>
+                                    <div style="position: absolute; bottom: -4px; left: -4px; width: 15px; height: 15px; border-bottom: 3px solid #2563EB; border-left: 3px solid #2563EB;"></div>
+                                    <div style="position: absolute; bottom: -4px; right: -4px; width: 15px; height: 15px; border-bottom: 3px solid #2563EB; border-right: 3px solid #2563EB;"></div>
+                                    
+                                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background-color: #2563EB; animation: scan 2s linear infinite;"></div>
+                                </div>
+                                <span style="position: absolute; font-family: var(--font-heading); font-size: 0.75rem; text-transform: uppercase; font-weight: 700; bottom: 30px; background-color: #111827; color: #FFFFFF; padding: 4px 8px; border-radius: 4px;">CNN SCAN COMPLETE: 99.4%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Attendance by Selfie</h3>
+                            <p class="project-desc-v2">
+                                An end-to-end CNN and biometric authentication portal for tracking presence.
+                            </p>
+                            <button class="project-expand-btn" data-target="proj3Details">View CV Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj3Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built an end-to-end system enabling attendance capture via classroom photo or voice recording, with facial recognition (dlib), speaker verification (Resemblyzer), and a Supabase (PostgreSQL) backend.</li>
+                                    <li>Designed the database schema and resolved data-integrity issues (foreign-key errors, query bugs) to keep the Supabase backend reliable across role-based student/teacher portals.</li>
+                                </ul>
+                            </div>
+                            <div class="project-meta-v2" style="margin-top: 15px;">
+                                Tech Stack: <span>Python, dlib, Resemblyzer, Supabase, Bcrypt, Segno</span>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Attendance-by-selfie---CNN" target="_blank" style="margin-right: 15px; text-decoration: underline; color: var(--text-color); font-weight: 700; font-size: 0.8rem;">GitHub Repository</a>
+                                <a href="https://landing-page-for-attendance-by-self.vercel.app/" target="_blank" style="text-decoration: underline; color: var(--accent-color); font-weight: 700; font-size: 0.8rem;">Live Demonstration</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: F1 Pit Stop Prediction -->
+                    <div class="project-card-v2">
+                        <div class="project-mockup-area" style="background-color: #111827; padding: 25px;">
+                            <div style="display: flex; flex-direction: column; width: 100%; justify-content: center; gap: 8px; font-family: monospace; color: #E2E1DA; font-size: 0.75rem;">
+                                <div style="color: #6B7280; text-align: center; font-size: 0.7rem; letter-spacing: 0.05em;">STACKED ENSEMBLE LEVEL-0</div>
+                                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; text-align: center; font-size: 0.6rem;">
+                                    <div style="border: 1px solid rgba(255,255,255,0.1); padding: 4px; border-radius: 4px;">LightGBM</div>
+                                    <div style="border: 1px solid rgba(255,255,255,0.1); padding: 4px; border-radius: 4px;">XGBoost</div>
+                                    <div style="border: 1px solid rgba(255,255,255,0.1); padding: 4px; border-radius: 4px;">CatBoost</div>
+                                    <div style="border: 1px solid rgba(255,255,255,0.1); padding: 4px; border-radius: 4px;">PyTorch</div>
+                                </div>
+                                <div style="text-align: center; color: #6B7280;"><i class="ph ph-arrow-down" style="font-size: 0.8rem;"></i></div>
+                                <div style="color: #6B7280; text-align: center; font-size: 0.7rem; letter-spacing: 0.05em;">LEVEL-1 METAMODEL ENSEMBLE</div>
+                                <div style="border: 1px solid #4CAF50; padding: 5px; border-radius: 4px; text-align: center; font-size: 0.7rem; color: #81C784; background-color: rgba(76, 175, 80, 0.05)">
+                                    GroupKFold Output Regressor
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">F1 Pit Stop Prediction</h3>
+                            <p class="project-desc-v2">
+                                Stacked ensemble modeling for predicting F1 race pit stop durations.
+                            </p>
+                            <button class="project-expand-btn" data-target="proj4Details">View CV Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj4Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built a stacked ensemble (LightGBM, XGBoost, CatBoost, PyTorch ANN) with GroupKFold cross-validation and domain-specific feature engineering to improve predictive accuracy.</li>
+                                </ul>
+                            </div>
+                            <div class="project-meta-v2" style="margin-top: 15px;">
+                                Tech Stack: <span>Python, LightGBM, XGBoost, CatBoost, PyTorch, GroupKFold</span>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="https://www.kaggle.com/tanvirsheikh02/competitions" target="_blank" style="text-decoration: underline; color: var(--text-color); font-weight: 700; font-size: 0.8rem;">Kaggle Competitions Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Do Section (Skills & Services mapping) -->
+        <section id="skills">
+            <div class="container">
+                <span class="section-label">What I Do</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Design. Build. Deploy.</h2>
+                <p style="color: var(--text-muted); max-width: 500px; margin-bottom: 40px;">
+                    End-to-end intelligent agentic systems and deep learning algorithms engineered for modern cloud infrastructure.
+                </p>
+                
+                <div class="services-row">
+                    
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="ph ph-brain"></i>
+                        </div>
+                        <h3 class="service-title">Generative AI &amp; Agents</h3>
+                        <p class="service-desc">
+                            Orchestrating multi-model systems using LangGraph cyclic graphs, conditional tool interfaces, structured output validation, and fallback route logic.
+                        </p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="ph ph-magnifying-glass-plus"></i>
+                        </div>
+                        <h3 class="service-title">Vector Search &amp; RAG</h3>
+                        <p class="service-desc">
+                            Engineering indexing flows from first principles, incorporating chunking thresholds, sentence embeddings vector searches, and MMR ranking logic.
+                        </p>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="ph ph-chart-line-up"></i>
+                        </div>
+                        <h3 class="service-title">Machine Learning</h3>
+                        <p class="service-desc">
+                            Structuring tabular data pipelines, ensemble model stacking (LightGBM/XGBoost/CatBoost), and PyTorch feedforward deep learning nets.
+                        </p>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i class="ph ph-cpu"></i>
+                        </div>
+                        <h3 class="service-title">Backend &amp; Database</h3>
+                        <p class="service-desc">
+                            Exposing REST APIs via FastAPI with strict Pydantic validation schemas, integrated with Supabase/PostgreSQL backends and Docker setups.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial, Partners & Circular Metric Section -->
+        <section id="metrics">
+            <div class="container testimonial-grid">
+                
+                <!-- Col 1: Tech Partners -->
+                <div class="brands-col">
+                    <span class="brands-col-title">Tech Integrations</span>
+                    <div class="brands-logo-grid">
+                        <div class="brand-logo-card">Groq API</div>
+                        <div class="brand-logo-card">LangGraph</div>
+                        <div class="brand-logo-card">ChromaDB</div>
+                        <div class="brand-logo-card">FastAPI</div>
+                        <div class="brand-logo-card">Supabase</div>
+                        <div class="brand-logo-card">PyTorch</div>
+                    </div>
+                </div>
+                
+                <!-- Col 2: Testimonial Quote -->
+                <div class="testimonial-card-v2">
+                    <p class="testimonial-quote">
+                        "Building modular, first-principles RAG retrieval engines instead of relying on generic wrappers provides complete debugging speed and architectural clarity."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-avatar">AI</div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">Agentic Evaluator Node</span>
+                            <span class="testimonial-author-title">Automated Verification Benchmark</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Col 3: Metric progress ring -->
+                <div class="metric-col">
+                    <div class="metric-circle-wrapper">
+                        <svg class="metric-svg" viewBox="0 0 140 140">
+                            <circle class="metric-bg-circle" cx="70" cy="70" r="60"></circle>
+                            <!-- Circumference is 2 * pi * r = 2 * 3.14159 * 60 = 377. Dashoffset matches percentage -->
+                            <circle class="metric-progress-circle" cx="70" cy="70" r="60" style="stroke-dashoffset: 0;"></circle>
+                        </svg>
+                        <span class="metric-value">100%</span>
+                    </div>
+                    <h3 class="metric-title">Model Verification</h3>
+                    <p class="metric-subtitle">Structured Pydantic validation rate across LLM responses.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- My Process Section (Pipeline Timeline) -->
+        <section id="process">
+            <div class="container">
+                <span class="section-label" style="display: block; text-align: center; margin-bottom: 10px;">My Process</span>
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 20px;">AI Ingestion &amp; Inference Pipeline</h2>
+                <p style="color: var(--text-muted); text-align: center; max-width: 500px; margin: 0 auto 50px auto;">
+                    A modular layout detailing how unstructured documents evolve into verified agent responses in my applications.
+                </p>
+                
+                <div class="process-timeline">
+                    <!-- Background connection line -->
+                    <div class="process-line-bg"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="process-node">1</div>
+                        <span class="process-step-title">Ingest</span>
+                        <p class="process-step-desc">PyMuPDF document parsing &amp; recursive character chunking.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="process-node">2</div>
+                        <span class="process-step-title">Embed</span>
+                        <p class="process-step-desc">Generating vector embeddings via sentence transformers.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="process-node">3</div>
+                        <span class="process-step-title">Retrieve</span>
+                        <p class="process-step-desc">MMR vector search retrieval &amp; query expansion.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="process-node">4</div>
+                        <span class="process-step-title">Generate</span>
+                        <p class="process-step-desc">Invoking Llama 3.3 70B inference via low-latency Groq endpoints.</p>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="process-step">
+                        <div class="process-node">5</div>
+                        <span class="process-step-title">Validate</span>
+                        <p class="process-step-desc">Invoking structured verification nodes checking hallucinations.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar Full-Width Section -->
+        <section class="stats-bar-section">
+            <div class="container stats-bar-grid">
+                <div class="stats-bar-item">
+                    <span class="stats-bar-icon"><i class="ph ph-folder-open"></i></span>
+                    <span class="stats-bar-number">4+</span>
+                    <span class="stats-bar-label">Core AI Projects</span>
+                </div>
+                <div class="stats-bar-item">
+                    <span class="stats-bar-icon"><i class="ph ph-tree-structure"></i></span>
+                    <span class="stats-bar-number">3+</span>
+                    <span class="stats-bar-label">Agentic Tools Integrated</span>
+                </div>
+                <div class="stats-bar-item">
+                    <span class="stats-bar-icon"><i class="ph ph-calendar"></i></span>
+                    <span class="stats-bar-number">2022</span>
+                    <span class="stats-bar-label">BSc SDE Study Started</span>
+                </div>
+                <div class="stats-bar-item">
+                    <span class="stats-bar-icon"><i class="ph ph-shield-check"></i></span>
+                    <span class="stats-bar-number">100%</span>
+                    <span class="stats-bar-label">RAG Internals Control</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <div class="faq-header">
+                    <span class="section-label">FAQ</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 5px;">Common Engineering Queries</h2>
+                </div>
+                
+                <div class="faq-container-v2">
+                    <div class="faq-item-v2">
+                        <button class="faq-trigger-v2">
+                            <span>How do you handle multi-tenant isolation in ChromaDB?</span>
+                            <span class="faq-icon-v2">+</span>
+                        </button>
+                        <div class="faq-content-v2">
+                            <div class="faq-content-inner-v2">
+                                I structure RAG indexes by setting per-session vector isolation filters. Using custom VectorStoreManager namespaces, document chunks are stored with metadata tags indicating session keys. Queries are filtered programmatically during MMR search routines.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item-v2">
+                        <button class="faq-trigger-v2">
+                            <span>Why use LangGraph cyclic graphs instead of LangChain chains?</span>
+                            <span class="faq-icon-v2">+</span>
+                        </button>
+                        <div class="faq-content-v2">
+                            <div class="faq-content-inner-v2">
+                                Linear LLM chains fail when agents require loops, error retry routing, or validation loops. LangGraph models agent tools as nodes and conditional state checks as edge-routing functions, offering complete programmatic flow control.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item-v2">
+                        <button class="faq-trigger-v2">
+                            <span>What is your stacked ensemble architecture setup?</span>
+                            <span class="faq-icon-v2">+</span>
+                        </button>
+                        <div class="faq-content-v2">
+                            <div class="faq-content-inner-v2">
+                                In my tabular models (like the F1 Kaggle predictor), Level-0 models include LightGBM, XGBoost, CatBoost, and a PyTorch feedforward network. Their prediction outputs serve as input vectors for a Level-1 Ridge Regressor, validated using GroupKFold.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="border-bottom: none; padding-bottom: 80px;">
+            <div class="container contact-grid-v2">
+                
+                <!-- Left Contact Info -->
+                <div class="contact-left-v2">
+                    <h2 class="contact-left-title">Let's create something extraordinary.</h2>
+                    <p style="color: var(--text-muted); font-size: 1.05rem;">
+                        Reach out for consultations on RAG engineering, agentic automations, or machine learning engineering.
+                    </p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <span class="contact-info-icon"><i class="ph ph-envelope"></i></span>
+                            <a href="mailto:tanvirsheikh0177@gmail.com" class="contact-info-link">tanvirsheikh0177@gmail.com</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="contact-info-icon"><i class="ph ph-phone"></i></span>
+                            <a href="tel:+8801778849350" class="contact-info-link">+880 1778 849350</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="contact-info-icon"><i class="ph ph-map-pin"></i></span>
+                            <span style="font-weight: 600;">Dhaka, Bangladesh</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials-v2">
+                        <a href="https://github.com/Tanvir-Sheikh-R" target="_blank" class="social-btn-v2" aria-label="GitHub Profile">
+                            <i class="ph ph-github-logo"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanvir-sheikh-r" target="_blank" class="social-btn-v2" aria-label="LinkedIn Profile">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Contact Form V2 Cards -->
+                <div class="contact-right-v2">
+                    <form class="contact-form-v2" onsubmit="event.preventDefault(); alert('Message sent successfully (demonstration).');">
+                        <div class="form-row-2">
+                            <div class="form-group-v2">
+                                <label for="formName" class="form-label-v2">Your Name</label>
+                                <input type="text" id="formName" class="form-control-v2" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group-v2">
+                                <label for="formEmail" class="form-label-v2">Your Email</label>
+                                <input type="email" id="formEmail" class="form-control-v2" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group-v2">
+                            <label for="formSubject" class="form-label-v2">Project Type</label>
+                            <input type="text" id="formSubject" class="form-control-v2" placeholder="Agentic Workflows / RAG pipeline / ML consult" required>
+                        </div>
+                        <div class="form-group-v2">
+                            <label for="formMsg" class="form-label-v2">Tell me about your project</label>
+                            <textarea id="formMsg" class="form-control-v2" placeholder="Please describe details..." required></textarea>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                                Send Message <i class="ph ph-paper-plane-tilt"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Opportunity Info Card with Isometric Cube visual -->
+                    <div class="opp-card">
+                        <p class="opp-text">AVAILABLE FOR FULL-TIME AND REMOTE CONTRACT ENGAGEMENTS</p>
+                        <div class="cube-visual-container">
+                            <!-- SVG drawing an isometric wireframe cube -->
+                            <svg class="cube-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12M2 7v10M22 7v10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 10px;">TANVIR <span>SHEIKH</span></a>
+                    <p style="font-size: 0.8rem; line-height: 1.5;">Engineering modular LLM-powered applications and neural ensembles.</p>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Navigation</span>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Work</a></li>
+                        <li><a href="#skills">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Socials</span>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/Tanvir-Sheikh-R" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/tanvir-sheikh-r" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:tanvirsheikh0177@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Newsletter</span>
+                    <p style="font-size: 0.8rem; margin-bottom: 10px;">Receive summaries of my technical RAG research.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" class="newsletter-input" placeholder="Your email..." required>
+                        <button type="submit" class="newsletter-btn"><i class="ph ph-paper-plane-tilt"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 MD. Tanvir Sheikh. All rights reserved.</p>
+                <p>Designed and built from first principles.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Interactivity Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
