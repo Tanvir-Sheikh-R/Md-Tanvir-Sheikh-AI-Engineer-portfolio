@@ -1,0 +1,7 @@
+fastapi-chat-app-backup/
+fastapi-chat-app-dev/
+prev-ai-assistant/
+vs-test-copy/
+.dsh/
+.env
+.env.*
