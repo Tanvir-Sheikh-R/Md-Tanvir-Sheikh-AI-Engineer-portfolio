@@ -1400,6 +1400,7 @@ footer {
     color: var(--white);
 }
 
+
 .social-btn-labeled--cv:hover {
     background-color: var(--accent-hover);
     border-color: var(--accent-hover);
@@ -1407,6 +1408,8 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(107, 142, 85, 0.30);
 }
+
+
 
 
 /* CSS: Converts a black SVG icon to a specific blue color */
