@@ -167,10 +167,164 @@
                             <p class="project-desc-v2">A stacked ensemble model for predicting race pit-stop duration.</p>
                             <button class="project-expand-btn" data-target="proj4Details">View Details <i class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj4Details"><ul class="project-bullets-list"><li>Built a stacked ensemble using LightGBM, XGBoost, CatBoost, and a PyTorch ANN with GroupKFold validation.</li></ul></div>
-                            <div class="project-btn-row"><a href="https://www.kaggle.com/tanvirsheikh02/competitions" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-trophy"></i> Kaggle Profile</a></div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Predicting-F1-Pit-Stops---Kaggle" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://www.kaggle.com/tanvirsheikh02/competitions" target="_blank" class="proj-btn proj-btn-live"><i class="ph ph-trophy"></i> Kaggle Profile</a>
+                            </div>
                         </div>
                     </article>
                     
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\cifar_10.jpg" alt="CIFAR-10 Image Classifier cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">CIFAR-10 Image Classifier</h3>
+                            <p class="project-desc-v2">A Convolutional Neural Network (CNN) built with PyTorch to classify 10 image categories (~87.75% validation accuracy).</p>
+                            <button class="project-expand-btn" data-target="proj5Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj5Details">
+                                <ul class="project-bullets-list">
+                                    <li>Architected a Convolutional Neural Network (CNN) in PyTorch to classify images across 10 distinct CIFAR-10 object categories.</li>
+                                    <li>Implemented data augmentation transformations, batch normalization layers, and learning rate scheduling to maximize generalization.</li>
+                                    <li>Achieved ~87.75% validation accuracy in 25 epochs using cross-entropy loss optimization and Adam optimizer.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/CIFAR-10-Image-Classifier-with-PyTorch-CNN" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\mnist_scratch.jfif" alt="MNIST Digit Classifier cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">MNIST Classifier From Scratch</h3>
+                            <p class="project-desc-v2">A feedforward deep neural network built completely from scratch using NumPy, Pandas &amp; first-principles linear algebra.</p>
+                            <button class="project-expand-btn" data-target="proj6Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj6Details">
+                                <ul class="project-bullets-list">
+                                    <li>Engineered a deep neural network without high-level ML frameworks, relying purely on Python, NumPy, and vector calculus.</li>
+                                    <li>Formulated matrix forward propagation, ReLU activation functions, Softmax output probabilities, and cross-entropy loss.</li>
+                                    <li>Derived analytical gradients for backpropagation and parameter weight updates via mini-batch gradient descent.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/MNIST-Digit-Classifier-From-Scratch" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\cat_vs_dog.jpg" alt="Dogs vs Cats Classifier cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Dogs vs Cats Classifier</h3>
+                            <p class="project-desc-v2">A custom CNN built with PyTorch to classify dogs and cats with ~93% validation accuracy on Kaggle dataset.</p>
+                            <button class="project-expand-btn" data-target="proj7Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj7Details">
+                                <ul class="project-bullets-list">
+                                    <li>Constructed and trained a custom PyTorch CNN on the Kaggle Dogs vs Cats dataset for binary image classification.</li>
+                                    <li>Applied image data augmentation techniques (random flips, rotations, color jitter) to mitigate overfitting.</li>
+                                    <li>Reached ~93% validation accuracy through hyperparameter tuning and model evaluation workflows.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Dogs-vs-Cats-Classifier---PyTorch-CNN" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\facial_e.png" alt="Facial Emotion Detector cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Facial Emotion Detector</h3>
+                            <p class="project-desc-v2">Deep learning model classifying 7 facial emotions using a custom CNN &amp; ResNet-18 transfer learning on FER-2013.</p>
+                            <button class="project-expand-btn" data-target="proj8Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj8Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built a deep learning model classifying 7 facial expressions (angry, disgust, fear, happy, sad, surprise, neutral) using the FER-2013 dataset.</li>
+                                    <li>Benchmarked a custom PyTorch CNN architecture against a fine-tuned ResNet-18 transfer learning backbone.</li>
+                                    <li>Preprocessed grayscale facial crops with normalization, augmentations, and evaluation metrics (confusion matrices, F1-scores).</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Facial-Emotion-Detector---CNN-FER-2013-Dataset-" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\crack.jfif" alt="Surface Crack Detection cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Surface Crack Detection</h3>
+                            <p class="project-desc-v2">A PyTorch CNN for automated structural concrete crack detection with data augmentation and dropout regularization.</p>
+                            <button class="project-expand-btn" data-target="proj9Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj9Details">
+                                <ul class="project-bullets-list">
+                                    <li>Developed a PyTorch computer vision model to detect structural surface cracks in concrete structures from Kaggle image datasets.</li>
+                                    <li>Implemented batch normalization, dropout layers, and image transformations to ensure robust feature extraction under varying lighting conditions.</li>
+                                    <li>Evaluated real-time classification performance for infrastructure safety monitoring and automated inspection workflows.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Surface-Crack-Detection-using-CNN-PyTorch-" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\loan.png" alt="Loan Approval Prediction System cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Loan Approval Prediction</h3>
+                            <p class="project-desc-v2">An ML classification system predicting loan approval decisions based on applicant financial &amp; demographic data.</p>
+                            <button class="project-expand-btn" data-target="proj10Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj10Details">
+                                <ul class="project-bullets-list">
+                                    <li>Developed an end-to-end Machine Learning pipeline evaluating applicant creditworthiness and financial risk metrics.</li>
+                                    <li>Evaluated and benchmarked multiple classifiers including Logistic Regression, K-Nearest Neighbors (KNN), and Gaussian Naive Bayes.</li>
+                                    <li>Performed feature preprocessing, missing value imputation, categorical encoding, and performance evaluation (ROC-AUC, Precision/Recall).</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Loan_Approval_Prediction_System" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\customer.png" alt="Grocery Store Customer Segmentation cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">Grocery Customer Segmentation</h3>
+                            <p class="project-desc-v2">Customer segmentation using K-Means clustering to analyze retail shopping behavior and spending patterns.</p>
+                            <button class="project-expand-btn" data-target="proj11Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj11Details">
+                                <ul class="project-bullets-list">
+                                    <li>Implemented unsupervised K-Means clustering to segment grocery store customers based on purchasing frequency and monetary metrics.</li>
+                                    <li>Applied the Elbow Method and Silhouette Score analysis to determine optimal cluster counts (k).</li>
+                                    <li>Derived actionable behavioral personas and targeted marketing insights through exploratory data visualization.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/Grocery_Store_Customer_Segmentation" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets\house.png" alt="California Housing Prediction cover placeholder">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">California Housing Prediction (ANN)</h3>
+                            <p class="project-desc-v2">An Artificial Neural Network (ANN) regressor predicting housing prices with advanced feature engineering.</p>
+                            <button class="project-expand-btn" data-target="proj12Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj12Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built an Artificial Neural Network (ANN) regression model to estimate California block housing values.</li>
+                                    <li>Conducting extensive feature engineering, scaling, outlier filtering, and spatial attribute handling.</li>
+                                    <li>Optimized model depth, hidden units, activation functions, and MSE loss function to minimize prediction error.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row">
+                                <a href="https://github.com/Tanvir-Sheikh-R/California-Housing-Prediction----ANN" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
