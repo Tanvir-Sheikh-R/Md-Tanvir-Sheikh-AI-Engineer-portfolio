@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Md Tanvir Sheikh | AI &amp; Machine Learning Engineer Portfolio. Specialty in LLM agent orchestration, first-principles RAG systems, and neural architectures.">
+    <meta name="description"
+        content="Md Tanvir Sheikh | AI &amp; Machine Learning Engineer Portfolio. Specialty in LLM agent orchestration, first-principles RAG systems, and neural architectures.">
     <title>Md Tanvir Sheikh | AI &amp; Machine Learning Engineer</title>
-    
+
     <!-- Tech Modern CSS -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Phosphor Icons for Modern Tech Icons -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/style.css">
 </head>
+
 <body>
 
     <!-- Header / Navigation -->
@@ -20,7 +23,7 @@
             <a href="#" class="logo">
                 MD TANVIR <span>SHEIKH</span>
             </a>
-            
+
             <ul class="nav-links-row">
                 <li><a href="#about">Home</a></li>
                 <li><a href="#projects">Work</a></li>
@@ -28,7 +31,7 @@
                 <li><a href="#process">Process</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
-            
+
             <a href="#contact" class="contact-header-btn">
                 Let's Talk
             </a>
@@ -39,7 +42,7 @@
         <!-- Hero Section -->
         <section id="about" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container hero-split">
-                
+
                 <!-- Left Hero Content -->
                 <div class="hero-content">
                     <span class="hero-welcome">Hello, I'm</span>
@@ -49,9 +52,13 @@
                     </h1>
                     <span class="hero-sub-title">AI &amp; Machine Learning Engineer</span>
                     <p class="hero-desc">
-                        AI/ML Engineer with hands-on experience building LLM-powered applications: RAG pipelines (both custom-built and LangChain-based), agent orchestration with LangGraph, and tool/function-calling systems via the Groq API. Comfortable across the full stack — embeddings and vector search (ChromaDB), backend APIs (FastAPI), and deployment (Streamlit, Docker) — with a deep-learning foundation in PyTorch. Currently expanding into production evaluation and cloud deployment.
+                        AI/ML Engineer with hands-on experience building LLM-powered applications: RAG pipelines (both
+                        custom-built and LangChain-based), agent orchestration with LangGraph, and tool/function-calling
+                        systems via the LLM API. Comfortable across the full stack — embeddings and vector search
+                        (ChromaDB), backend APIs (FastAPI), and deployment (Streamlit, Docker, AWS) — with a deep-learning
+                        foundation in PyTorch. Currently expanding into production evaluation and cloud deployment.
                     </p>
-                    
+
                     <div class="hero-buttons">
                         <a href="#projects" class="btn-primary">
                             View My Work <i class="ph ph-arrow-right"></i>
@@ -60,25 +67,25 @@
                             About Me <i class="ph ph-user-focus"></i>
                         </a>
                     </div>
-                    
+
                     <!-- Available for projects card indicator -->
                     <div class="available-badge">
                         <div class="avatar-stack">
-                            <span class="avatar-stack-img"><i class="ph ph-brain"></i></span>
-                            <span class="avatar-stack-img"><i class="ph ph-code"></i></span>
-                            <span class="avatar-stack-img"><i class="ph ph-cpu"></i></span>
+                            <span class="avatar-stack-img"><img src="assets/icons8-ai-96.png" alt="AI"></span>
+                            <span class="avatar-stack-img"><img src="assets/neural-network.png" alt="Neural network"></span>
+                            <span class="avatar-stack-img" id="green"><img src="assets/database.png" alt="Database"></span>
                         </div>
                         <p class="available-text">
                             AVAILABLE FOR PROJECTS &bull; <span>Trusted by forward-thinking developers.</span>
                         </p>
                     </div>
                 </div>
-                
+
                 <!-- Right Hero Visual Area -->
 
 
-                
-<!-- 
+
+                <!-- 
                 <div class="hero-visual-wrapper">
                     <div class="visual-grid-overlay"></div>
                     
@@ -103,7 +110,7 @@
                 </div>
 -->
 
-     
+
             </div>
         </section>
 
@@ -119,209 +126,363 @@
                         View All Projects <i class="ph ph-arrow-right"></i>
                     </a>
                 </div>
-                
+
                 <div class="projects-grid">
                     <article class="project-card-v2">
                         <img class="project-photo" src="assets/ai.png" alt="Personal AI Assistant interface">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Personal AI Assistant with RAG</h3>
-                            <p class="project-desc-v2">An agentic assistant with document retrieval and tool-use orchestration.</p>
-                            <button class="project-expand-btn" data-target="proj1Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">An agentic assistant with document retrieval and tool-use
+                                orchestration.</p>
+                            <button class="project-expand-btn" data-target="proj1Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj1Details">
                                 <ul class="project-bullets-list">
-                                    <li>Built an agentic AI assistant using LangGraph for stateful tool orchestration and workflow control.</li>
-                                    <li>Engineered an end-to-end RAG pipeline with MMR retrieval, deduplication, and LLM-based relevance filtering.</li>
-                                    <li>Implemented multi-model fallback routing with Pydantic-validated structured AI outputs for reliability.</li>
-                                    <li>Built real-time token streaming with FastAPI SSE, including in-flight generation cancellation.</li>
-                                    <li>Implemented UUID-based browser isolation to prevent cross-session document and knowledge-base mixing.</li>
+                                    <li>Built an agentic AI assistant using LangGraph for stateful tool orchestration
+                                        and workflow control.</li>
+                                    <li>Engineered an end-to-end RAG pipeline with MMR retrieval, deduplication, and
+                                        LLM-based relevance filtering.</li>
+                                    <li>Implemented multi-model fallback routing with Pydantic-validated structured AI
+                                        outputs for reliability.</li>
+                                    <li>Built real-time token streaming with FastAPI SSE, including in-flight generation
+                                        cancellation.</li>
+                                    <li>Implemented UUID-based browser isolation to prevent cross-session document and
+                                        knowledge-base mixing.</li>
                                 </ul>
                             </div>
-                            <div class="project-btn-row"><a href="https://github.com/Tanvir-Sheikh-R/Personal-AI-Assistant__GPT-app-with-FastAPI" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a><a href="http://personal-ai-assistant.duckdns.org/" target="_blank" class="proj-btn proj-btn-live"><i class="ph ph-arrow-square-out"></i> Live Demo</a></div>
+                            <div class="project-btn-row"><a
+                                    href="https://github.com/Tanvir-Sheikh-R/Personal-AI-Assistant__GPT-app-with-FastAPI"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a><a href="http://personal-ai-assistant.duckdns.org/" target="_blank"
+                                    class="proj-btn proj-btn-live"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+                            </div>
                         </div>
                     </article>
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets/student_login.png" alt="Attendance by Selfie student login interface">
+                        <img class="project-photo" src="assets/student_login.png"
+                            alt="Attendance by Selfie student login interface">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Attendance by Selfie</h3>
                             <p class="project-desc-v2">A biometric attendance portal powered by computer vision.</p>
-                            <button class="project-expand-btn" data-target="proj3Details">View Details <i class="ph ph-caret-down"></i></button>
-                            <div class="project-bullets-collapse" id="proj3Details"><ul class="project-bullets-list"><li>Built attendance capture through classroom photos or voice recordings with facial recognition and speaker verification.</li><li>Designed a reliable Supabase backend for student and teacher portals, including role-based data workflows.</li></ul></div>
-                            <div class="project-btn-row"><a href="https://github.com/Tanvir-Sheikh-R/Attendance-by-selfie---CNN" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a><a href="https://landing-page-for-attendance-by-self.vercel.app/" target="_blank" class="proj-btn proj-btn-live"><i class="ph ph-arrow-square-out"></i> Live Demo</a></div>
+                            <button class="project-expand-btn" data-target="proj3Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj3Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built attendance capture through classroom photos or voice recordings with
+                                        facial recognition and speaker verification.</li>
+                                    <li>Designed a reliable Supabase backend for student and teacher portals, including
+                                        role-based data workflows.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row"><a
+                                    href="https://github.com/Tanvir-Sheikh-R/Attendance-by-selfie---CNN" target="_blank"
+                                    class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a><a
+                                    href="https://landing-page-for-attendance-by-self.vercel.app/" target="_blank"
+                                    class="proj-btn proj-btn-live"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+                            </div>
                         </div>
                     </article>
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets/Rag.png" alt="Circuit board representing the Custom RAG Pipeline project">
+                        <img class="project-photo" src="assets/Rag.png"
+                            alt="Circuit board representing the Custom RAG Pipeline project">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Custom RAG Pipeline</h3>
-                            <p class="project-desc-v2">A from-scratch document-retrieval pipeline built around vector search.</p>
-                            <button class="project-expand-btn" data-target="proj2Details">View Details <i class="ph ph-caret-down"></i></button>
-                            <div class="project-bullets-collapse" id="proj2Details"><ul class="project-bullets-list"><li>Built the RAG system from first principles with custom embedding, vector-store, and retrieval components.</li><li>Implemented document ingestion, chunking, ChromaDB storage, and LLM generation while resolving production retrieval issues.</li></ul></div>
-                            <div class="project-btn-row"><a href="https://github.com/Tanvir-Sheikh-R/RAG-PDF-reader" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a></div>
+                            <p class="project-desc-v2">A from-scratch document-retrieval pipeline built around vector
+                                search.</p>
+                            <button class="project-expand-btn" data-target="proj2Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj2Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built the RAG system from first principles with custom embedding, vector-store,
+                                        and retrieval components.</li>
+                                    <li>Implemented document ingestion, chunking, ChromaDB storage, and LLM generation
+                                        while resolving production retrieval issues.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row"><a href="https://github.com/Tanvir-Sheikh-R/RAG-PDF-reader"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a></div>
                         </div>
                     </article>
-                    
+
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\f1_pit.png?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Data-center servers representing the F1 Pit Stop Prediction project">
+                        <img class="project-photo" src="assets\f1_pit.png?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                            alt="Data-center servers representing the F1 Pit Stop Prediction project">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">F1 Pit Stop Prediction</h3>
-                            <p class="project-desc-v2">A stacked ensemble model for predicting race pit-stop duration.</p>
-                            <button class="project-expand-btn" data-target="proj4Details">View Details <i class="ph ph-caret-down"></i></button>
-                            <div class="project-bullets-collapse" id="proj4Details"><ul class="project-bullets-list"><li>Built a stacked ensemble using LightGBM, XGBoost, CatBoost, and a PyTorch ANN with GroupKFold validation.</li></ul></div>
+                            <p class="project-desc-v2">A stacked ensemble model for predicting race pit-stop duration.
+                                Got 0.95167 private accuracy.</p>
+                            <button class="project-expand-btn" data-target="proj4Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj4Details">
+                                <ul class="project-bullets-list">
+                                    <li>Built a stacked ensemble using LightGBM, XGBoost, CatBoost, and a PyTorch ANN
+                                        with GroupKFold validation.</li>
+                                </ul>
+                            </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/Predicting-F1-Pit-Stops---Kaggle" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
-                                <a href="https://www.kaggle.com/tanvirsheikh02/competitions" target="_blank" class="proj-btn proj-btn-live"><i class="ph ph-trophy"></i> Kaggle Profile</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/Predicting-F1-Pit-Stops---Kaggle"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
+                                <a href="https://www.kaggle.com/tanvirsheikh02/competitions" target="_blank"
+                                    class="proj-btn proj-btn-live"><i class="ph ph-trophy"></i> Kaggle Profile</a>
                             </div>
                         </div>
                     </article>
-                    
+
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\cifar_10.jpg" alt="CIFAR-10 Image Classifier cover placeholder">
+                        <img class="project-photo" src="assets\cifar_10.jpg"
+                            alt="CIFAR-10 Image Classifier cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">CIFAR-10 Image Classifier</h3>
-                            <p class="project-desc-v2">A Convolutional Neural Network (CNN) built with PyTorch to classify 10 image categories (~87.75% validation accuracy).</p>
-                            <button class="project-expand-btn" data-target="proj5Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">A Convolutional Neural Network (CNN) built with PyTorch to
+                                classify 10 image categories (~87.75% validation accuracy) & (Kaggle prediction accuracy
+                                ~90%).</p>
+                            <button class="project-expand-btn" data-target="proj5Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj5Details">
                                 <ul class="project-bullets-list">
-                                    <li>Architected a Convolutional Neural Network (CNN) in PyTorch to classify images across 10 distinct CIFAR-10 object categories.</li>
-                                    <li>Implemented data augmentation transformations, batch normalization layers, and learning rate scheduling to maximize generalization.</li>
-                                    <li>Achieved ~87.75% validation accuracy in 25 epochs using cross-entropy loss optimization and Adam optimizer.</li>
+                                    <li>Architected a Convolutional Neural Network (CNN) in PyTorch to classify images
+                                        across 10 distinct CIFAR-10 object categories.</li>
+                                    <li>Implemented data augmentation transformations, batch normalization layers, and
+                                        learning rate scheduling to maximize generalization.</li>
+                                    <li>Achieved ~87.75% validation accuracy in 25 epochs using cross-entropy loss
+                                        optimization and Adam optimizer.</li>
+                                    <li>The submitted Kaggle prediction achieved 0.90050 accuracy.</li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/CIFAR-10-Image-Classifier-with-PyTorch-CNN" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/CIFAR-10-Image-Classifier-with-PyTorch-CNN"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\mnist_scratch.jfif" alt="MNIST Digit Classifier cover placeholder">
+                        <img class="project-photo" src="assets\mnist_scratch.jfif"
+                            alt="MNIST Digit Classifier cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">MNIST Classifier From Scratch</h3>
-                            <p class="project-desc-v2">A feedforward deep neural network built completely from scratch using NumPy, Pandas &amp; first-principles linear algebra.</p>
-                            <button class="project-expand-btn" data-target="proj6Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">A feedforward deep neural network built completely from scratch
+                                using NumPy, Pandas &amp; first-principles linear algebra.</p>
+                            <button class="project-expand-btn" data-target="proj6Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj6Details">
                                 <ul class="project-bullets-list">
-                                    <li>Engineered a deep neural network without high-level ML frameworks, relying purely on Python, NumPy, and vector calculus.</li>
-                                    <li>Formulated matrix forward propagation, ReLU activation functions, Softmax output probabilities, and cross-entropy loss.</li>
-                                    <li>Derived analytical gradients for backpropagation and parameter weight updates via mini-batch gradient descent.</li>
+                                    <li>Engineered a deep neural network without high-level ML frameworks, relying
+                                        purely on Python, NumPy, and vector calculus.</li>
+                                    <li>Formulated matrix forward propagation, ReLU activation functions, Softmax output
+                                        probabilities, and cross-entropy loss.</li>
+                                    <li>Derived analytical gradients for backpropagation and parameter weight updates
+                                        via mini-batch gradient descent.</li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/MNIST-Digit-Classifier-From-Scratch" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/MNIST-Digit-Classifier-From-Scratch"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\cat_vs_dog.jpg" alt="Dogs vs Cats Classifier cover placeholder">
+                        <img class="project-photo" src="assets\cat_vs_dog.jpg"
+                            alt="Dogs vs Cats Classifier cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Dogs vs Cats Classifier</h3>
-                            <p class="project-desc-v2">A custom CNN built with PyTorch to classify dogs and cats with ~93% validation accuracy on Kaggle dataset.</p>
-                            <button class="project-expand-btn" data-target="proj7Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">A custom CNN built with PyTorch to classify dogs and cats with
+                                ~93% validation accuracy on Kaggle dataset.</p>
+                            <button class="project-expand-btn" data-target="proj7Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj7Details">
                                 <ul class="project-bullets-list">
-                                    <li>Constructed and trained a custom PyTorch CNN on the Kaggle Dogs vs Cats dataset for binary image classification.</li>
-                                    <li>Applied image data augmentation techniques (random flips, rotations, color jitter) to mitigate overfitting.</li>
-                                    <li>Reached ~93% validation accuracy through hyperparameter tuning and model evaluation workflows.</li>
+                                    <li>Constructed and trained a custom PyTorch CNN on the Kaggle Dogs vs Cats dataset
+                                        for binary image classification.</li>
+                                    <li>Applied image data augmentation techniques (random flips, rotations, color
+                                        jitter) to mitigate overfitting.</li>
+                                    <li>Reached ~93% validation accuracy through hyperparameter tuning and model
+                                        evaluation workflows.</li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/Dogs-vs-Cats-Classifier---PyTorch-CNN" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/Dogs-vs-Cats-Classifier---PyTorch-CNN"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\facial_e.png" alt="Facial Emotion Detector cover placeholder">
+                        <img class="project-photo" src="assets\facial_e.png"
+                            alt="Facial Emotion Detector cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Facial Emotion Detector</h3>
-                            <p class="project-desc-v2">Deep learning model classifying 7 facial emotions using a custom CNN &amp; ResNet-18 transfer learning on FER-2013.</p>
-                            <button class="project-expand-btn" data-target="proj8Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">Deep learning model classifying 7 facial emotions using a custom
+                                CNN &amp; ResNet-18 transfer learning on FER-2013.</p>
+                            <button class="project-expand-btn" data-target="proj8Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj8Details">
                                 <ul class="project-bullets-list">
-                                    <li>Built a deep learning model classifying 7 facial expressions (angry, disgust, fear, happy, sad, surprise, neutral) using the FER-2013 dataset.</li>
-                                    <li>Benchmarked a custom PyTorch CNN architecture against a fine-tuned ResNet-18 transfer learning backbone.</li>
-                                    <li>Preprocessed grayscale facial crops with normalization, augmentations, and evaluation metrics (confusion matrices, F1-scores).</li>
+                                    <li>Built a deep learning model classifying 7 facial expressions (angry, disgust,
+                                        fear, happy, sad, surprise, neutral) using the FER-2013 dataset.</li>
+                                    <li>Benchmarked a custom PyTorch CNN architecture against a fine-tuned ResNet-18
+                                        transfer learning backbone.</li>
+                                    <li>Preprocessed grayscale facial crops with normalization, augmentations, and
+                                        evaluation metrics (confusion matrices, F1-scores).</li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/Facial-Emotion-Detector---CNN-FER-2013-Dataset-" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/Facial-Emotion-Detector---CNN-FER-2013-Dataset-"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\crack.jfif" alt="Surface Crack Detection cover placeholder">
+                        <img class="project-photo" src="assets\crack.jfif"
+                            alt="Surface Crack Detection cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Surface Crack Detection</h3>
-                            <p class="project-desc-v2">A PyTorch CNN for automated structural concrete crack detection with data augmentation and dropout regularization.</p>
-                            <button class="project-expand-btn" data-target="proj9Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">A PyTorch CNN for automated structural concrete crack detection
+                                with data augmentation and dropout regularization. ~99.8% validation accuracy on Kaggle
+                                dataset.</p>
+                            <button class="project-expand-btn" data-target="proj9Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj9Details">
                                 <ul class="project-bullets-list">
-                                    <li>Developed a PyTorch computer vision model to detect structural surface cracks in concrete structures from Kaggle image datasets.</li>
-                                    <li>Implemented batch normalization, dropout layers, and image transformations to ensure robust feature extraction under varying lighting conditions.</li>
-                                    <li>Evaluated real-time classification performance for infrastructure safety monitoring and automated inspection workflows.</li>
+                                    <li>Developed a PyTorch computer vision model to detect structural surface cracks in
+                                        concrete structures from Kaggle image datasets.</li>
+                                    <li>Implemented batch normalization, dropout layers, and image transformations to
+                                        ensure robust feature extraction under varying lighting conditions.</li>
+                                    <li>Evaluated real-time classification performance for infrastructure safety
+                                        monitoring and automated inspection workflows.</li>
+                                    <li>The model achieved a best validation accuracy of 99.83% in just 5 epochs, with
+                                        training loss steadily decreasing from 0.061 to 0.019.</li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/Surface-Crack-Detection-using-CNN-PyTorch-" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/Surface-Crack-Detection-using-CNN-PyTorch-"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\loan.png" alt="Loan Approval Prediction System cover placeholder">
+                        <img class="project-photo" src="assets\loan.png"
+                            alt="Loan Approval Prediction System cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Loan Approval Prediction</h3>
-                            <p class="project-desc-v2">An ML classification system predicting loan approval decisions based on applicant financial &amp; demographic data.</p>
-                            <button class="project-expand-btn" data-target="proj10Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">An ML classification system predicting loan approval decisions
+                                based on applicant financial &amp; demographic data.</p>
+                            <button class="project-expand-btn" data-target="proj10Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj10Details">
                                 <ul class="project-bullets-list">
-                                    <li>Developed an end-to-end Machine Learning pipeline evaluating applicant creditworthiness and financial risk metrics.</li>
-                                    <li>Evaluated and benchmarked multiple classifiers including Logistic Regression, K-Nearest Neighbors (KNN), and Gaussian Naive Bayes.</li>
-                                    <li>Performed feature preprocessing, missing value imputation, categorical encoding, and performance evaluation (ROC-AUC, Precision/Recall).</li>
+                                    <li>Developed an end-to-end Machine Learning pipeline evaluating applicant
+                                        creditworthiness and financial risk metrics.</li>
+                                    <li>Evaluated and benchmarked multiple classifiers including Logistic Regression,
+                                        K-Nearest Neighbors (KNN), and Gaussian Naive Bayes.</li>
+                                    <li>Performed feature preprocessing, missing value imputation, categorical encoding,
+                                        and performance evaluation (ROC-AUC, Precision/Recall).</li>
+                                    <li>
+                                        <table style="border-collapse: collapse; width: 100%;" >
+                                            <thead>
+                                                <tr>
+                                                    <th>Model</th>
+                                                    <th>Accuracy</th>
+                                                    <th>Precision</th>
+                                                    <th>Recall</th>
+                                                    <th>F1-Score</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Logistic Regression</td>
+                                                    <td>88%</td>
+                                                    <td>81%</td>
+                                                    <td>78%</td>
+                                                    <td>80%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>K-Nearest Neighbors</td>
+                                                    <td>75%</td>
+                                                    <td>64%</td>
+                                                    <td>52%</td>
+                                                    <td>57%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Naive Bayes</td>
+                                                    <td>87%</td>
+                                                    <td>84%</td>
+                                                    <td>70%</td>
+                                                    <td>76%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/Loan_Approval_Prediction_System" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/Loan_Approval_Prediction_System"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\customer.png" alt="Grocery Store Customer Segmentation cover placeholder">
+                        <img class="project-photo" src="assets\customer.png"
+                            alt="Grocery Store Customer Segmentation cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">Grocery Customer Segmentation</h3>
-                            <p class="project-desc-v2">Customer segmentation using K-Means clustering to analyze retail shopping behavior and spending patterns.</p>
-                            <button class="project-expand-btn" data-target="proj11Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">Customer segmentation using K-Means clustering to analyze retail
+                                shopping behavior and spending patterns.</p>
+                            <button class="project-expand-btn" data-target="proj11Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj11Details">
                                 <ul class="project-bullets-list">
-                                    <li>Implemented unsupervised K-Means clustering to segment grocery store customers based on purchasing frequency and monetary metrics.</li>
-                                    <li>Applied the Elbow Method and Silhouette Score analysis to determine optimal cluster counts (k).</li>
-                                    <li>Derived actionable behavioral personas and targeted marketing insights through exploratory data visualization.</li>
+                                    <li>Implemented unsupervised K-Means clustering to segment grocery store customers
+                                        based on purchasing frequency and monetary metrics.</li>
+                                    <li>Applied the Elbow Method and Silhouette Score analysis to determine optimal
+                                        cluster counts (k).</li>
+                                    <li>Derived actionable behavioral personas and targeted marketing insights through
+                                        exploratory data visualization.</li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/Grocery_Store_Customer_Segmentation" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/Grocery_Store_Customer_Segmentation"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card-v2">
-                        <img class="project-photo" src="assets\house.png" alt="California Housing Prediction cover placeholder">
+                        <img class="project-photo" src="assets\house.png"
+                            alt="California Housing Prediction cover placeholder">
                         <div class="project-info-v2">
                             <h3 class="project-title-v2">California Housing Prediction (ANN)</h3>
-                            <p class="project-desc-v2">An Artificial Neural Network (ANN) regressor predicting housing prices with advanced feature engineering.</p>
-                            <button class="project-expand-btn" data-target="proj12Details">View Details <i class="ph ph-caret-down"></i></button>
+                            <p class="project-desc-v2">An Artificial Neural Network (ANN) regressor predicting housing
+                                prices with advanced feature engineering.</p>
+                            <button class="project-expand-btn" data-target="proj12Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
                             <div class="project-bullets-collapse" id="proj12Details">
                                 <ul class="project-bullets-list">
-                                    <li>Built an Artificial Neural Network (ANN) regression model to estimate California block housing values.</li>
-                                    <li>Conducting extensive feature engineering, scaling, outlier filtering, and spatial attribute handling.</li>
-                                    <li>Optimized model depth, hidden units, activation functions, and MSE loss function to minimize prediction error.</li>
+                                    <li>Built an Artificial Neural Network (ANN) regression model to estimate California
+                                        block housing values.</li>
+                                    <li>Conducting extensive feature engineering, scaling, outlier filtering, and
+                                        spatial attribute handling.</li>
+                                    <li>Optimized model depth, hidden units, activation functions, and MSE loss function
+                                        to minimize prediction error.</li>
                                 </ul>
                             </div>
                             <div class="project-btn-row">
-                                <a href="https://github.com/Tanvir-Sheikh-R/California-Housing-Prediction----ANN" target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://github.com/Tanvir-Sheikh-R/California-Housing-Prediction----ANN"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -335,55 +496,60 @@
                 <span class="section-label">What I Do</span>
                 <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Design. Build. Deploy.</h2>
                 <p style="color: var(--text-muted); max-width: 500px; margin-bottom: 40px;">
-                    End-to-end intelligent agentic systems and deep learning algorithms engineered for modern cloud infrastructure.
+                    End-to-end intelligent agentic systems and deep learning algorithms engineered for modern cloud
+                    infrastructure.
                 </p>
-                
+
                 <div class="services-row">
-                    
+
                     <!-- Card 1 -->
                     <div class="service-card">
                         <div class="service-icon-box">
-                            <i class="ph ph-brain"></i>
+                            <i class="service-icon"><img src="assets/icons8-ai-96.png" alt=""></i>
                         </div>
                         <h3 class="service-title">Generative AI &amp; Agents</h3>
                         <p class="service-desc">
-                            Orchestrating multi-model systems using LangGraph cyclic graphs, conditional tool interfaces, structured output validation, and fallback route logic.
+                            Orchestrating multi-model systems using LangGraph cyclic graphs, conditional tool
+                            interfaces, structured output validation, and fallback route logic.
                         </p>
                     </div>
-                    
+
                     <!-- Card 2 -->
                     <div class="service-card">
                         <div class="service-icon-box">
-                            <i class="ph ph-magnifying-glass-plus"></i>
+                            <i class="service-icon"><img src="assets/icons8-document-96.png" alt=""></i>
                         </div>
                         <h3 class="service-title">Vector Search &amp; RAG</h3>
                         <p class="service-desc">
-                            Engineering indexing flows from first principles, incorporating chunking thresholds, sentence embeddings vector searches, and MMR ranking logic.
+                            Engineering indexing flows from first principles, incorporating chunking thresholds,
+                            sentence embeddings vector searches, and MMR ranking logic.
                         </p>
                     </div>
-                    
+
                     <!-- Card 3 -->
                     <div class="service-card">
                         <div class="service-icon-box">
-                            <i class="ph ph-chart-line-up"></i>
+                            <i class="service-icon"><img src="assets/neural-network.png" alt=""></i>
                         </div>
                         <h3 class="service-title">Machine Learning</h3>
                         <p class="service-desc">
-                            Structuring tabular data pipelines, ensemble model stacking (LightGBM/XGBoost/CatBoost), and PyTorch feedforward deep learning nets.
+                            Structuring tabular data pipelines, ensemble model stacking (LightGBM/XGBoost/CatBoost), and
+                            PyTorch feedforward deep learning nets.
                         </p>
                     </div>
-                    
+
                     <!-- Card 4 -->
                     <div class="service-card">
                         <div class="service-icon-box">
-                            <i class="ph ph-cpu"></i>
+                            <i class="service-icon"><img src="assets/database.png" alt=""></i>
                         </div>
                         <h3 class="service-title">Backend &amp; Database</h3>
                         <p class="service-desc">
-                            Exposing REST APIs via FastAPI with strict Pydantic validation schemas, integrated with Supabase/PostgreSQL backends and Docker setups.
+                            Exposing REST APIs via FastAPI with strict Pydantic validation schemas, integrated with
+                            Supabase/PostgreSQL backends, Docker containers, and AWS cloud deployments.
                         </p>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -391,24 +557,27 @@
         <!-- Testimonial, Partners & Circular Metric Section -->
         <section id="metrics">
             <div class="container testimonial-grid">
-                
+
                 <!-- Col 1: Tech Partners -->
                 <div class="brands-col">
                     <span class="brands-col-title">Tech Integrations</span>
                     <div class="brands-logo-grid">
-                        <div class="brand-logo-card">Groq API</div>
+                        <div class="brand-logo-card">LLM API</div>
                         <div class="brand-logo-card">LangGraph</div>
                         <div class="brand-logo-card">ChromaDB</div>
                         <div class="brand-logo-card">FastAPI</div>
                         <div class="brand-logo-card">Supabase</div>
                         <div class="brand-logo-card">PyTorch</div>
+                        <div class="brand-logo-card">Docker</div>
+                        <div class="brand-logo-card">AWS</div>
                     </div>
                 </div>
-                
+
                 <!-- Col 2: Testimonial Quote -->
                 <div class="testimonial-card-v2">
                     <p class="testimonial-quote">
-                        "Building modular, first-principles RAG retrieval engines instead of relying on generic wrappers provides complete debugging speed and architectural clarity."
+                        "Building modular, first-principles RAG retrieval engines instead of relying on generic wrappers
+                        provides complete debugging speed and architectural clarity."
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-author-avatar">AI</div>
@@ -418,72 +587,77 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Col 3: Metric progress ring -->
                 <div class="metric-col">
                     <div class="metric-circle-wrapper">
                         <svg class="metric-svg" viewBox="0 0 140 140">
                             <circle class="metric-bg-circle" cx="70" cy="70" r="60"></circle>
                             <!-- Circumference is 2 * pi * r = 2 * 3.14159 * 60 = 377. Dashoffset matches percentage -->
-                            <circle class="metric-progress-circle" cx="70" cy="70" r="60" style="stroke-dashoffset: 0;"></circle>
+                            <circle class="metric-progress-circle" cx="70" cy="70" r="60" style="stroke-dashoffset: 0;">
+                            </circle>
                         </svg>
                         <span class="metric-value">100%</span>
                     </div>
                     <h3 class="metric-title">Model Verification</h3>
                     <p class="metric-subtitle">Structured Pydantic validation rate across LLM responses.</p>
                 </div>
-                
+
             </div>
         </section>
 
         <!-- My Process Section (Pipeline Timeline) -->
         <section id="process">
             <div class="container">
-                <span class="section-label" style="display: block; text-align: center; margin-bottom: 10px;">My Process</span>
-                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 20px;">AI Ingestion &amp; Inference Pipeline</h2>
+                <span class="section-label" style="display: block; text-align: center; margin-bottom: 10px;">My
+                    Process</span>
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 20px;">AI Ingestion &amp; Inference
+                    Pipeline</h2>
                 <p style="color: var(--text-muted); text-align: center; max-width: 500px; margin: 0 auto 50px auto;">
-                    A modular layout detailing how unstructured documents evolve into verified agent responses in my applications.
+                    A modular layout detailing how unstructured documents evolve into verified agent responses in my
+                    applications.
                 </p>
-                
+
                 <div class="process-timeline">
                     <!-- Background connection line -->
                     <div class="process-line-bg"></div>
-                    
+
                     <!-- Step 1 -->
                     <div class="process-step">
                         <div class="process-node">1</div>
                         <span class="process-step-title">Ingest</span>
                         <p class="process-step-desc">PyMuPDF document parsing &amp; recursive character chunking.</p>
                     </div>
-                    
+
                     <!-- Step 2 -->
                     <div class="process-step">
                         <div class="process-node">2</div>
                         <span class="process-step-title">Embed</span>
                         <p class="process-step-desc">Generating vector embeddings via sentence transformers.</p>
                     </div>
-                    
+
                     <!-- Step 3 -->
                     <div class="process-step">
                         <div class="process-node">3</div>
                         <span class="process-step-title">Retrieve</span>
                         <p class="process-step-desc">MMR vector search retrieval &amp; query expansion.</p>
                     </div>
-                    
+
                     <!-- Step 4 -->
                     <div class="process-step">
                         <div class="process-node">4</div>
                         <span class="process-step-title">Generate</span>
-                        <p class="process-step-desc">Invoking Llama 3.3 70B inference via low-latency Groq endpoints.</p>
+                        <p class="process-step-desc">Invoking model routing through Llama, OpenAI, Qwen models to inference via low-latency Groq endpoints.
+                        </p>
                     </div>
-                    
+
                     <!-- Step 5 -->
                     <div class="process-step">
                         <div class="process-node">5</div>
                         <span class="process-step-title">Validate</span>
                         <p class="process-step-desc">Invoking structured verification nodes checking hallucinations.</p>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -493,7 +667,7 @@
             <div class="container stats-bar-grid">
                 <div class="stats-bar-item">
                     <span class="stats-bar-icon"><i class="ph ph-folder-open"></i></span>
-                    <span class="stats-bar-number">4+</span>
+                    <span class="stats-bar-number">12+</span>
                     <span class="stats-bar-label">Core AI Projects</span>
                 </div>
                 <div class="stats-bar-item">
@@ -521,7 +695,7 @@
                     <span class="section-label">FAQ</span>
                     <h2 style="font-size: 2.5rem; margin-top: 5px;">Common Engineering Queries</h2>
                 </div>
-                
+
                 <div class="faq-container-v2">
                     <div class="faq-item-v2">
                         <button class="faq-trigger-v2">
@@ -530,11 +704,13 @@
                         </button>
                         <div class="faq-content-v2">
                             <div class="faq-content-inner-v2">
-                                I structure RAG indexes by setting per-session vector isolation filters. Using custom VectorStoreManager namespaces, document chunks are stored with metadata tags indicating session keys. Queries are filtered programmatically during MMR search routines.
+                                I structure RAG indexes by setting per-session vector isolation filters. Using custom
+                                VectorStoreManager namespaces, document chunks are stored with metadata tags indicating
+                                session keys. Queries are filtered programmatically during MMR search routines.
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="faq-item-v2">
                         <button class="faq-trigger-v2">
                             <span>Why use LangGraph cyclic graphs instead of LangChain chains?</span>
@@ -542,11 +718,13 @@
                         </button>
                         <div class="faq-content-v2">
                             <div class="faq-content-inner-v2">
-                                Linear LLM chains fail when agents require loops, error retry routing, or validation loops. LangGraph models agent tools as nodes and conditional state checks as edge-routing functions, offering complete programmatic flow control.
+                                Linear LLM chains fail when agents require loops, error retry routing, or validation
+                                loops. LangGraph models agent tools as nodes and conditional state checks as
+                                edge-routing functions, offering complete programmatic flow control.
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="faq-item-v2">
                         <button class="faq-trigger-v2">
                             <span>What is your stacked ensemble architecture setup?</span>
@@ -554,7 +732,9 @@
                         </button>
                         <div class="faq-content-v2">
                             <div class="faq-content-inner-v2">
-                                In my tabular models (like the F1 Kaggle predictor), Level-0 models include LightGBM, XGBoost, CatBoost, and a PyTorch feedforward network. Their prediction outputs serve as input vectors for a Level-1 Ridge Regressor, validated using GroupKFold.
+                                In my tabular models (like the F1 Kaggle predictor), Level-0 models include LightGBM,
+                                XGBoost, CatBoost, and a PyTorch feedforward network. Their prediction outputs serve as
+                                input vectors for a Level-1 Ridge Regressor, validated using GroupKFold.
                             </div>
                         </div>
                     </div>
@@ -565,14 +745,15 @@
         <!-- Contact Section -->
         <section id="contact" style="border-bottom: none; padding-bottom: 80px;">
             <div class="container contact-grid-v2">
-                
+
                 <!-- Left Contact Info -->
                 <div class="contact-left-v2">
                     <h2 class="contact-left-title">Let's create something extraordinary.</h2>
                     <p style="color: var(--text-muted); font-size: 1.05rem;">
-                        Reach out for consultations on RAG engineering, agentic automations, or machine learning engineering.
+                        Reach out for consultations on RAG engineering, agentic automations, or machine learning
+                        engineering.
                     </p>
-                    
+
                     <div class="contact-info-list">
                         <div class="contact-info-item">
                             <span class="contact-info-icon contact-info-icon--email">
@@ -580,7 +761,8 @@
                                 <i class="ph ph-envelope-simple-open"></i></span>
                             <div class="contact-info-detail">
                                 <span class="contact-info-label">Email</span>
-                                <a href="mailto:tanvirsheikh0177@gmail.com" class="contact-info-link">tanvirsheikh0177@gmail.com</a>
+                                <a href="mailto:tanvirsheikh0177@gmail.com"
+                                    class="contact-info-link">tanvirsheikh0177@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-info-item">
@@ -603,54 +785,63 @@
                         </div>
                         <div class="contact-info-item">
                             <span class="contact-info-icon contact-info-icon--kaggle">
-                                
+
                                 <img src="assets/kaggle.svg" style="width: 30px;" class="filtered-icon" alt="Icon">
 
                                 <i class="ph ph-trophy"></i></span>
                             <div class="contact-info-detail">
                                 <span class="contact-info-label">Kaggle</span>
-                                <a href="https://www.kaggle.com/tanvirsheikh02" target="_blank" class="contact-info-link">kaggle.com/tanvirsheikh02</a>
+                                <a href="https://www.kaggle.com/tanvirsheikh02" target="_blank"
+                                    class="contact-info-link">kaggle.com/tanvirsheikh02</a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Labeled Social Buttons Row -->
                     <div class="contact-socials-v2">
-                        <a href="https://github.com/Tanvir-Sheikh-R" target="_blank" class="social-btn-labeled" aria-label="GitHub Profile">
+                        <a href="https://github.com/Tanvir-Sheikh-R" target="_blank" class="social-btn-labeled"
+                            aria-label="GitHub Profile">
                             <i class="ph ph-github-logo"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/tanvir-sheikh-r" target="_blank" class="social-btn-labeled social-btn-labeled--linkedin" aria-label="LinkedIn Profile">
+                        <a href="https://www.linkedin.com/in/tanvir-sheikh-r" target="_blank"
+                            class="social-btn-labeled social-btn-labeled--linkedin" aria-label="LinkedIn Profile">
                             <i class="ph ph-linkedin-logo"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="Tanvir_Sheikh_AI_Engineer_CV.pdf" download class="social-btn-labeled social-btn-labeled--cv" aria-label="Download CV">
+                        <a href="Tanvir_Sheikh_AI_Engineer_CV.pdf" download
+                            class="social-btn-labeled social-btn-labeled--cv" aria-label="Download CV">
                             <i class="ph ph-file-arrow-down"></i>
                             <span>Download CV</span>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Right Contact Form V2 Cards -->
                 <div class="contact-right-v2">
-                    <form class="contact-form-v2" onsubmit="event.preventDefault(); alert('Message sent successfully (demonstration).');">
+                    <form class="contact-form-v2"
+                        onsubmit="event.preventDefault(); alert('Message sent successfully (demonstration).');">
                         <div class="form-row-2">
                             <div class="form-group-v2">
                                 <label for="formName" class="form-label-v2">Your Name</label>
-                                <input type="text" id="formName" class="form-control-v2" placeholder="John Doe" required>
+                                <input type="text" id="formName" class="form-control-v2" placeholder="John Doe"
+                                    required>
                             </div>
                             <div class="form-group-v2">
                                 <label for="formEmail" class="form-label-v2">Your Email</label>
-                                <input type="email" id="formEmail" class="form-control-v2" placeholder="john@example.com" required>
+                                <input type="email" id="formEmail" class="form-control-v2"
+                                    placeholder="john@example.com" required>
                             </div>
                         </div>
                         <div class="form-group-v2">
                             <label for="formSubject" class="form-label-v2">Project Type</label>
-                            <input type="text" id="formSubject" class="form-control-v2" placeholder="Agentic Workflows / RAG pipeline / ML consult" required>
+                            <input type="text" id="formSubject" class="form-control-v2"
+                                placeholder="Agentic Workflows / RAG pipeline / ML consult" required>
                         </div>
                         <div class="form-group-v2">
                             <label for="formMsg" class="form-label-v2">Tell me about your project</label>
-                            <textarea id="formMsg" class="form-control-v2" placeholder="Please describe details..." required></textarea>
+                            <textarea id="formMsg" class="form-control-v2" placeholder="Please describe details..."
+                                required></textarea>
                         </div>
                         <div style="margin-top: 10px;">
                             <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
@@ -658,20 +849,22 @@
                             </button>
                         </div>
                     </form>
-                    
+
                     <!-- Opportunity Info Card with Isometric Cube visual -->
                     <div class="opp-card">
                         <p class="opp-text">AVAILABLE FOR FULL-TIME AND REMOTE CONTRACT ENGAGEMENTS</p>
                         <div class="cube-visual-container">
                             <!-- SVG drawing an isometric wireframe cube -->
-                            <svg class="cube-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 22V12M2 7v10M22 7v10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg class="cube-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 22V12M2 7v10M22 7v10" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
     </main>
@@ -682,7 +875,8 @@
             <div class="footer-top">
                 <div class="footer-col">
                     <a href="#" class="logo" style="margin-bottom: 10px;">MD TANVIR <span>SHEIKH</span></a>
-                    <p style="font-size: 0.8rem; line-height: 1.5;">Engineering modular LLM-powered applications and neural ensembles.</p>
+                    <p style="font-size: 0.8rem; line-height: 1.5;">Engineering modular LLM-powered applications and
+                        neural ensembles.</p>
                 </div>
                 <div class="footer-col">
                     <span class="footer-col-title">Navigation</span>
@@ -702,14 +896,15 @@
                 </div>
                 <div class="footer-col">
                     <span class="footer-col-title">Newsletter</span>
-                    <p style="font-size: 0.8rem; margin-bottom: 10px;">Receive summaries of my technical RAG research.</p>
+                    <p style="font-size: 0.8rem; margin-bottom: 10px;">Receive summaries of my technical RAG research.
+                    </p>
                     <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
                         <input type="email" class="newsletter-input" placeholder="Your email..." required>
                         <button type="submit" class="newsletter-btn"><i class="ph ph-paper-plane-tilt"></i></button>
                     </form>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Md Tanvir Sheikh. All rights reserved.</p>
 
@@ -720,4 +915,5 @@
     <!-- Custom Interactivity Scripts -->
     <script src="index.js"></script>
 </body>
+
 </html>

@@ -300,6 +300,18 @@ header {
     font-weight: 700;
 }
 
+.avatar-stack-img img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(16%) saturate(598%) hue-rotate(62deg) brightness(92%) contrast(86%);
+}
+
+#green img {
+    filter: brightness(0) invert(1);
+}
+
+
 .avatar-stack-img:last-child {
     margin-right: 0;
     background-color: var(--accent-color);
@@ -564,6 +576,23 @@ header {
     font-size: 1.3rem;
     color: var(--accent-color);
     background-color: rgba(37, 99, 235, 0.05);
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-style: normal;
+}
+
+.service-icon img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(16%) saturate(598%) hue-rotate(62deg) brightness(92%) contrast(86%);
 }
 
 .service-title {
