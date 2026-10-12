@@ -55,7 +55,8 @@
                         AI/ML Engineer with hands-on experience building LLM-powered applications: RAG pipelines (both
                         custom-built and LangChain-based), agent orchestration with LangGraph, and tool/function-calling
                         systems via the LLM API. Comfortable across the full stack — embeddings and vector search
-                        (ChromaDB), backend APIs (FastAPI), and deployment (Streamlit, Docker, AWS) — with a deep-learning
+                        (ChromaDB), backend APIs (FastAPI), and deployment (Streamlit, Docker, AWS) — with a
+                        deep-learning
                         foundation in PyTorch. Currently expanding into production evaluation and cloud deployment.
                     </p>
 
@@ -72,8 +73,10 @@
                     <div class="available-badge">
                         <div class="avatar-stack">
                             <span class="avatar-stack-img"><img src="assets/icons8-ai-96.png" alt="AI"></span>
-                            <span class="avatar-stack-img"><img src="assets/neural-network.png" alt="Neural network"></span>
-                            <span class="avatar-stack-img" id="green"><img src="assets/database.png" alt="Database"></span>
+                            <span class="avatar-stack-img"><img src="assets/neural-network.png"
+                                    alt="Neural network"></span>
+                            <span class="avatar-stack-img" id="green"><img src="assets/database.png"
+                                    alt="Database"></span>
                         </div>
                         <p class="available-text">
                             AVAILABLE FOR PROJECTS &bull; <span>Trusted by forward-thinking developers.</span>
@@ -128,6 +131,44 @@
                 </div>
 
                 <div class="projects-grid">
+
+                    <article class="project-card-v2">
+                        <img class="project-photo" src="assets/  " alt="পাঠ সমাধান">
+                        <div class="project-info-v2">
+                            <h3 class="project-title-v2">পাঠ সমাধান - Bengali Textbook RAG Assistant</h3>
+                            <p class="project-desc-v2">An end-to-end retrieval-augmented tutor over the NCTB national
+                                curriculum, letting students ask questions in Bangla and get answers grounded in their
+                                own textbook chapter.</p>
+                            <button class="project-expand-btn" data-target="proj1Details">View Details <i
+                                    class="ph ph-caret-down"></i></button>
+                            <div class="project-bullets-collapse" id="proj1Details">
+                                <ul class="project-bullets-list">
+                                    <li>LangChain / LangChain-Core / LangChain-Community / LangChain-Classic,
+                                        BM25Retriever + FAISS dense vectors combined via EnsembleRetriever (hybrid
+                                        weights 0.4/0.6), RecursiveCharacterTextSplitter chunking, and
+                                        sentence-transformers running intfloat/multilingual-e5-large (1024-d, with
+                                        query: / passage: prefixes).</li>
+                                    <li>FAISS per-chapter indexes (index.faiss + index.pkl) persisted to disk under
+                                        embedding_cache/, with an md5-hashed chapter-folder layout so retrieval loads
+                                        pre-built indexes instead of re-embedding.</li>
+                                    <li>EasyOCR (Bangla + English, GPU-accelerated via PyTorch/torchvision), pdf2image +
+                                        Poppler, NumPy, tqdm — with JSON-based caching and resumable partial runs.</li>
+                                    <li>DeepSeek (deepseek-chat via langchain-deepseek) for grounded answer generation,
+                                        with Groq (openai/gpt-oss-120b) and OpenRouter wired as alternatives.</li>
+                                    <li>Next.js 16 (App Router, Turbopack) + React 19 + TypeScript, Tailwind CSS v4,
+                                        react-markdown + remark-gfm for answer rendering, lucide-react icons, and Hind
+                                        Siliguri (Bengali webfont) via next/font.</li>
+                                </ul>
+                            </div>
+                            <div class="project-btn-row"><a
+                                    href="https://github.com/Tanvir-Sheikh-R/Personal-AI-Assistant__GPT-app-with-FastAPI"
+                                    target="_blank" class="proj-btn proj-btn-github"><i class="ph ph-github-logo"></i>
+                                    GitHub</a><a href="http://personal-ai-assistant.duckdns.org/" target="_blank"
+                                    class="proj-btn proj-btn-live"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
                     <article class="project-card-v2">
                         <img class="project-photo" src="assets/ai.png" alt="Personal AI Assistant interface">
                         <div class="project-info-v2">
@@ -388,7 +429,7 @@
                                     <li>Performed feature preprocessing, missing value imputation, categorical encoding,
                                         and performance evaluation (ROC-AUC, Precision/Recall).</li>
                                     <li>
-                                        <table style="border-collapse: collapse; width: 100%;" >
+                                        <table style="border-collapse: collapse; width: 100%;">
                                             <thead>
                                                 <tr>
                                                     <th>Model</th>
@@ -647,7 +688,8 @@
                     <div class="process-step">
                         <div class="process-node">4</div>
                         <span class="process-step-title">Generate</span>
-                        <p class="process-step-desc">Invoking model routing through Llama, OpenAI, Qwen models to inference via low-latency Groq endpoints.
+                        <p class="process-step-desc">Invoking model routing through Llama, OpenAI, Qwen models to
+                            inference via low-latency Groq endpoints.
                         </p>
                     </div>
 
