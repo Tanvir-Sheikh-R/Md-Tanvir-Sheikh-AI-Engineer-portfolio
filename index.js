@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScrolling();
     initProjectCollapsible();
 });
+
+
+
 /**
  * 1. Smooth scrolling for anchors
  */
